@@ -1,0 +1,91 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "parser": "babel-eslint",
+  "plugins": ["react", "prettier", "react-hooks"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "max-len": [
+      2,
+      100,
+      2,
+      {
+        "ignoreComments": true
+      }
+    ],
+    "quotes": [2, "single"],
+    "key-spacing": [
+      2,
+      {
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "comma-spacing": [
+      2,
+      {
+        "after": true
+      }
+    ],
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": [
+      "error",
+      {
+        "ignore": ["router", "params", "location"]
+      }
+    ],
+    "react/forbid-prop-types": 0,
+    "react/no-did-update-set-state": "off",
+    "react/destructuring-assignment": "off",
+    "react/button-has-type": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/jsx-tag-spacing": "off",
+    "operator-linebreak": "off",
+    "no-else-return": "off",
+    "implicit-arrow-linebreak": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }],
+    "camelcase": [
+      "error",
+      {
+        "allow": ["^UNSAFE_"],
+        "properties": "never"
+      }
+    ],
+    "class-methods-use-this": "off",
+    "no-console": [
+      "warn",
+      {
+        "allow": ["error"]
+      }
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-max-props-per-line": ["warn", { "maximum": 1, "when": "multiline" }],
+    "no-underscore-dangle": ["error", { "allow": ["_id", "_value"] }]
+  }
+}

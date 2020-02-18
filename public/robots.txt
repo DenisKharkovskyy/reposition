@@ -1,0 +1,6 @@
+User-agent: * # '*' handle all bots
+Disallow: / # delete slash for index site
+User-agent: Googlebot-Image
+Disallow: /
+Allow: /static/media
+# add Sitemap: https://reposition.it/sitemap.xml

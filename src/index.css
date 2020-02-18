@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
